@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 // import MealItem from './MealItem';
 import { Link, useParams } from "react-router-dom";
 import SingleMeal from "./SingleMeal";
+import { FaPlus} from "react-icons/fa";
 
 function FoodsList() {
   const [meals, setMeals] = useState([]);
@@ -55,6 +56,13 @@ function FoodsList() {
   return (
     <div>
       <h2>FoodsList</h2>
+      <div className="addMeal">
+        <Link to={"/mealform"} onClick={() => <FoodsList />}>
+          <button>
+            <FaPlus className="icon" /> Meal
+          </button>
+        </Link>
+      </div>
       {getFoods}
     </div>
   );

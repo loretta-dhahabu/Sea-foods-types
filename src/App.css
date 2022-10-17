@@ -108,5 +108,35 @@ h4{
 .icon{
   font-size: .8em;
 }
+.addMeal button{
+  float: right;
+  position: relative;
+  z-index: 1;
+  margin-top: -3.5em;
+  margin-left: 2em;
+  border: none;
+  border-radius: 3em;
+  height: 3em;
+  width: 6em;
+  background-color: rgb(123, 237, 9);
+  font-size: 18px;
+  font-weight: bold;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.form-group > input{
+  width: 20em;
+  /* border: 2px solid aqua; */
+  border-bottom: aqua 2px solid;
+  border-left: aqua 2px solid;
+  border-right: none;
+  border-top: none;
+  border-radius: .5em;
+}
 
 

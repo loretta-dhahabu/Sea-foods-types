@@ -7,6 +7,7 @@ import About from './components/About';
 import Header from './components/Header';
 import FoodsList from './components/FoodsList';
 import SingleMeal from './components/SingleMeal';
+import MealForm from './components/MealForm';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/about" element={ <About /> } ></Route>
           <Route exact path="/meals" element={ <FoodsList /> } ></Route>
           <Route exact path="/meals/:id" element={ <SingleMeal /> } ></Route>
-          {/* <Route exact path="/meals/:id/edit" element="<Home/>" /> */}
+          <Route exact path="/mealform" element={<MealForm/>} ></Route>
         </Routes>
       </Router>
     </div>
