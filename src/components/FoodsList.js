@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 // import MealItem from './MealItem';
 import { Link, useParams } from "react-router-dom";
 import SingleMeal from "./SingleMeal";
-import { FaPlus} from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
+import MealForm from "./MealForm";
 
 function FoodsList() {
   const [meals, setMeals] = useState([]);
@@ -64,6 +65,7 @@ function FoodsList() {
         </Link>
       </div>
       {getFoods}
+      <MealForm />
     </div>
   );
 }
